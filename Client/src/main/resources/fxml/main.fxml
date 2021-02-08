@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkg.MainController">
+    <children>
+        <GridPane layoutX="22.0" layoutY="13.0" prefHeight="272.0" prefWidth="560.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="60.0">
+            <children>
+                <TextField fx:id="tf11" />
+                <TextField fx:id="tf12" GridPane.columnIndex="2" />
+                <TextField fx:id="tf21" GridPane.rowIndex="1" />
+                <TextField fx:id="tf13" GridPane.columnIndex="4" />
+                <TextField fx:id="tf22" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <TextField fx:id="tf23" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                <TextField fx:id="tf32" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <TextField fx:id="tf31" GridPane.rowIndex="2" />
+                <TextField fx:id="tf33" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                <TextField fx:id="tf41" GridPane.rowIndex="3" />
+                <TextField fx:id="tf42" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                <TextField fx:id="tf43" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                <TextField fx:id="tf51" GridPane.rowIndex="4" />
+                <TextField fx:id="tf52" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                <TextField fx:id="tf53" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                <TextField fx:id="tf14" GridPane.columnIndex="6" />
+                <TextField fx:id="tf24" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                <TextField fx:id="tf34" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                <TextField fx:id="tf44" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                <TextField fx:id="tf54" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+                <TextField fx:id="tf15" GridPane.columnIndex="8" />
+                <TextField fx:id="tf25" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+                <TextField fx:id="tf35" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+                <TextField fx:id="tf45" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+                <TextField fx:id="tf55" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+            </children>
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="0.0" prefWidth="20.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="0.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="10.0" prefWidth="20.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="10.0" prefWidth="20.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="0.0" prefWidth="20.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+        </GridPane>
+        <Label alignment="CENTER" layoutX="20.0" layoutY="14.0" prefHeight="35.0" prefWidth="200.0" text="Convolve matrix" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="400.0">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Button layoutX="20.0" layoutY="390.0" mnemonicParsing="false" onAction="#load" prefHeight="40.0" prefWidth="185.0" text="Load an image" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" />
+        <Button layoutX="418.0" layoutY="390.0" mnemonicParsing="false" onAction="#save" prefHeight="40.0" prefWidth="185.0" text="Save convolved image" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+        <Button layoutX="218.0" layoutY="390.0" mnemonicParsing="false" onAction="#preview" prefHeight="40.0" prefWidth="185.0" text="Convolve/Preview" />
+        <ComboBox fx:id="kernelComboBox" layoutX="223.0" layoutY="16.0" onAction="#doOnClickOnTheComboBox" prefHeight="35.0" prefWidth="377.0" />
+    </children>
+</AnchorPane>

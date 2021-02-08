@@ -1,0 +1,17 @@
+pkg1\InvalidKernelException.class
+pkg1\PreviewController.class
+pkg1\Item.class
+pkg1\Kernel.class
+pkg1\AlertWindows.class
+pkg1\OpenableWindow.class
+pkg1\Initializer.class
+pkg1\MainController.class
+pkg1\Initializer$1.class
+pkg1\ConnectableItem.class
+pkg1\ByteArrayOfTheImage.class
+pkg1\Init.class
+pkg1\ConvolveService.class
+pkg1\ServerNotRunningException.class
+META-INF\annotations\pkg1.ConnectableItem
+pkg1\KernelHolder.class
+pkg1\WrapInit.class
